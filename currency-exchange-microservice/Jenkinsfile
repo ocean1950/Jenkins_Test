@@ -1,7 +1,9 @@
-node {
+pipeline {
+    agent none {
 	stage('Build') {
 		echo "Build"
 	}
+    }
 	stage('Test') {
 		echo "Test"
 	}
